@@ -16,11 +16,16 @@ export const ContainerItems = styled.div`
   padding: 5px;
   align-items: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.192);
-  
+
   @media (max-width: 548px) {
     width: 340px;
     height: fit-content;
   }
+
+  @media (max-width: 375px) {
+    width: 300px;
+  }
+
   div {
     display: flex;
     flex-direction: column;
@@ -36,6 +41,11 @@ export const Image = styled.img`
   @media (max-width: 548px) {
     width: 100%;
     height: 220px;
+  }
+
+  @media (max-width: 375px) {
+    width: 100%;
+    height: 200px;
   }
 `
 
