@@ -2,29 +2,22 @@ import React, { useState, useEffect } from 'react'
 
 import PropTypes from 'prop-types'
 
-import { Container } from './styles'
+import { Container, CardContainer } from './styles'
 import formatCurrency from '../../utils/formatCurrency'
 import api from '../../services/api'
 
-import { Header, Banner, Cards } from '../../components'
+import { Header, Banner, CardInternational } from '../../components'
 
 export function International (international) {
   const [packs, setPacks] = useState([])
 
   useEffect(() => {
     async function loadPacks () {
-      const { data: allPacks } = await api.get('international')
+      const { data } = await api.get('international')
 
-      console.log(allPacks)
+      console.log(data)
 
-      const newProducts = allPacks.map(international => {
-        return {
-          ...international,
-          formatedPrice: formatCurrency(international.price)
-        }
-      })
-
-      setPacks(newProducts)
+      setPacks(packs)
     }
 
     loadPacks()
@@ -34,11 +27,16 @@ export function International (international) {
     <Container>
       <Header />
       <Banner />
-      <Cards key={international.id} international={international} />
+      <CardContainer>
+        <CardInternational
+          key={international.id}
+          international={international}
+        />
+      </CardContainer>
     </Container>
   )
 }
 
-Cards.propTypes = {
+CardInternational.propTypes = {
   international: PropTypes.object
 }

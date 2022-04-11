@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const Menu = styled.div`
   width: 100%;
   height: 90px;
-  padding: 0 auto;
-  margin: 0 auto ;
+  padding: auto;
+  margin: auto;
   background-color: #ffff;
   display: flex;
   align-items: center;
@@ -12,9 +12,7 @@ export const Menu = styled.div`
 `
 
 export const Logo = styled.img`
-    height: 70px;
-    align-items: center;
-    justify-content:center;
+  height: 115px;
+  align-items: center;
+  justify-content: center;
 `
-
-

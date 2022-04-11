@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import {
   Container,
+  ContainerItems,
   PackName,
   Image,
   PackPrice,
@@ -10,24 +11,22 @@ import {
   Button
 } from './styles'
 
-export function Cards ({ international }) {
+export function CardInternational ({ international }) {
   return (
     <Container>
-      <Container>
+      <ContainerItems>
         <Image src={international.url} alt='foto do produto' />
         <div>
-          <PackName> {international.name} </PackName>
-          <PackDescription> {international.description} </PackDescription>
+          <PackName> {international.name}</PackName>
+          <PackDescription>{international.description}</PackDescription>
           <PackPrice> {international.price}</PackPrice>
           <Button>Cotar já</Button>
         </div>
-      </Container>
-      <div></div>
+      </ContainerItems>
     </Container>
   )
 }
 
-
-Cards.propTypes = {
+CardInternational.propTypes = {
   international: PropTypes.object
 }

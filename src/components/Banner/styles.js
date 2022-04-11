@@ -10,16 +10,11 @@ export const Container = styled.div`
     height: 600px;
     background-position: center;
     background-size: cover;
-}
+  }
 
   h1 {
-    font-size: 30px;
-    color: white;
-    padding-top: 30px;
     text-transform: capitalize;
-    font-size: 55px;
+    font-size: 65px;
     color: white;
   }
 `
-
-

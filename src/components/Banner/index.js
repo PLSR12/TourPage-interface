@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container,  } from './styles'
+import { Container  } from './styles'
 
 import Monte from '../../assets/monte-roraima.jpg'
 
