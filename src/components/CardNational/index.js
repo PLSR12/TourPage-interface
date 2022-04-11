@@ -19,7 +19,7 @@ export function CardNational ({ national }) {
         <div>
           <PackName> {national.name}</PackName>
           <PackDescription>{national.description}</PackDescription>
-          <PackPrice> {national.price}</PackPrice>
+          <PackPrice> a partir de {national.formatedPrice}</PackPrice>
           <Button>Cotar já</Button>
         </div>
       </ContainerItems>

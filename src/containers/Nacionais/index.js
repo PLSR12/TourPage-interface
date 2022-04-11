@@ -32,8 +32,9 @@ export function National (national) {
       <Header />
       <Banner />
       <CardContainer>
-        <CardNational key={national.id} national={national} />
-      </CardContainer>
+      {packs.map(national =>(
+          <CardNational key={national.id} national={national} />
+       ))}      </CardContainer>
     </Container>
   )
 }

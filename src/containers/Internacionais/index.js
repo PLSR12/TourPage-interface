@@ -13,11 +13,15 @@ export function International (international) {
 
   useEffect(() => {
     async function loadPacks () {
-      const { data } = await api.get('international')
+      const { data:allPacks } = await api.get('international')
 
-      console.log(data)
+      console.log(allPacks)
 
-      setPacks(packs)
+      const newPacks = allPacks.map(international => {
+        return { ...international, formatedPrice: formatCurrency(international.price) }
+      })
+
+      setPacks(newPacks)
     }
 
     loadPacks()
@@ -28,10 +32,9 @@ export function International (international) {
       <Header />
       <Banner />
       <CardContainer>
-        <CardInternational
-          key={international.id}
-          international={international}
-        />
+      {packs.map(international =>(
+          <CardInternational key={international.id} international={international} />
+       ))}
       </CardContainer>
     </Container>
   )
