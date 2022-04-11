@@ -7,16 +7,20 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   display: flex;
-  background-color: #00A3EB;
+  background-color: #00a3eb;
 `
 
-export const Items = styled.div`
+export const ContainerItems = styled.div`
   justify-content: center;
   align-items: center;
 `
 
 export const Title = styled.h1`
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  flex-wrap: wrap;
+  word-wrap: break-word;
   color: #ffff;
 `
 
@@ -33,8 +37,10 @@ export const International = styled.button`
   align-items: center;
   width: 150px;
   height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
   background: #ffff;
-  border-radius: 5px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   color: #000;
@@ -52,8 +58,10 @@ export const National = styled.button`
   align-items: center;
   width: 150px;
   height: 50px;
+  font-size: 1rem;
+  font-weight: bold;
   background: #ffff;
-  border-radius: 5px;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   color: #000;

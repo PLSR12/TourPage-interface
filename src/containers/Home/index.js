@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom'
 import {
   Container,
   Title,
-  Items,
+  ContainerItems,
   ContainerButtons,
   International,
   National
@@ -27,15 +27,15 @@ export function Home () {
   return (
     <Container>
       <Header />
-      <Items>
+      <ContainerItems>
         <Title> Qual é o seu destino hoje? </Title>
         <ContainerButtons>
           <International onClick={redirectInternational}>
             Internacional
           </International>
-          <National onClick={redirectNational}> Nacional</National>
+          <National onClick={redirectNational}>Nacional</National>
         </ContainerButtons>
-      </Items>
+      </ContainerItems>
     </Container>
   )
 }

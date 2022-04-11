@@ -8,7 +8,7 @@ export function Banner () {
   return (
     <Container>
       <div style={{backgroundImage: `url(${Monte})`}}>
-        <h1>A viagem do seu sonho começa aqui</h1>
+        <h1>A viagem dos seus sonhos começa aqui!</h1>
       </div>
     </Container>
   )
