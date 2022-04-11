@@ -1,30 +1,41 @@
 import React from 'react'
- 
-import { useNavigate } from 'react-router-dom'
 
-import { Container } from './styles'
+import { useHistory } from 'react-router-dom'
 
-function Home () {
-  const navigate = useNavigate()
+import {
+  Container,
+  Title,
+  Items,
+  ContainerButtons,
+  International,
+  National
+} from './styles'
 
-  function redirectInternational() {
-    navigate('/internacionais')
+import { Header } from '../../components'
+
+export function Home () {
+  const { push } = useHistory()
+
+  function redirectInternational () {
+    push('/internacionais')
   }
 
   function redirectNational () {
-    navigate('/nacionais')
+    push('/nacionais')
   }
 
   return (
     <Container>
-      <section class='first-card'>
-        <h1> O que você está buscando? </h1>
-        <button onClick={redirectInternational} > Internacionais </button>
-        <button onClick={redirectNational}> Nacionais</button>
-
-      </section>
+      <Header />
+      <Items>
+        <Title> Qual é o seu destino hoje? </Title>
+        <ContainerButtons>
+          <International onClick={redirectInternational}>
+            Internacional
+          </International>
+          <National onClick={redirectNational}> Nacional</National>
+        </ContainerButtons>
+      </Items>
     </Container>
   )
 }
-
-export default Home

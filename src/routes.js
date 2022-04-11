@@ -1,21 +1,20 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
-import Home from './containers/Home'
-import Internationals from './containers/Internacionais'
-import National from './containers/Nacionais'
+import { Home, International, National } from './containers'
 
-function Router () {
+function AppRoutes () {
   return (
-    <Routes>
-      <Route path='/' element={<Home />} />
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Home} />
 
-      <Route path='/internacionais' element={<Internationals />} />
+        <Route exact path='/internacionais' component={International} />
 
-      <Route path='/nacionais' element={<National/>} />
-
-    </Routes>
+        <Route exact path='/nacionais' component={National} />
+      </Switch>
+    </Router>
   )
 }
 
-export default Router
+export default AppRoutes

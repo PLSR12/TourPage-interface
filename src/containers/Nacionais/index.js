@@ -1,13 +1,14 @@
 import React from 'react'
 
-import { Container} from './styles'
+import { Container } from './styles'
 
-function National() {
-    return (
-        <Container>
-            <h1> 3</h1>
-        </Container>
-    )
+import { Header, Banner } from '../../components'
+
+export function National () {
+  return (
+    <Container>
+      <Header />
+      <Banner />
+    </Container>
+  )
 }
-
-export default National
