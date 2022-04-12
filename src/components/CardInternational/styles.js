@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 
 export const ContainerItems = styled.div`
-  min-height: 550px;
+  height: 580px;
   width: 380px;
   background-color: white;
   margin: 20px 15px 0px 15px;
@@ -68,7 +68,7 @@ export const PackPrice = styled.p`
   font-size: 1.2rem;
   line-height: 21px;
   margin-top: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #000000;
 `
 export const Button = styled.button`
@@ -80,7 +80,6 @@ export const Button = styled.button`
   text-transform: uppercase;
   border: 0;
   border-radius: 15px;
-  margin-bottom: 20px;
   background-color: #0568a6;
   color: #ffffff;
   cursor: pointer;
