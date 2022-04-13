@@ -6,7 +6,12 @@ import { Container, CardContainer } from './styles'
 import formatCurrency from '../../utils/formatCurrency'
 import api from '../../services/api'
 
-import { Header, Banner, CardInternational } from '../../components'
+import {
+  Header,
+  Banner,
+  CardInternational,
+  AvaliationsCarousel
+} from '../../components'
 
 export function International ({ location: { state } }) {
   const [packs, setPacks] = useState([])
@@ -42,6 +47,7 @@ export function International ({ location: { state } }) {
           />
         ))}
       </CardContainer>
+      <AvaliationsCarousel />
     </Container>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom'
 
-import { Home, International, National, AdminInternational} from './containers'
+import { Home, International, National, AdminInternational,AdminNational} from './containers'
 import paths from './constants/paths' 
 
 function AppRoutes () {
@@ -15,6 +15,12 @@ function AppRoutes () {
         <Route exact path={paths.Packs} component={AdminInternational} />
         <Route exact path={paths.NewPacks} component={AdminInternational} />
         <Route exact path={paths.EditPacks} component={AdminInternational} />
+
+        <Route exact path={paths.PacksNational} component={AdminNational} />
+        <Route exact path={paths.NewPacksNational} component={AdminNational} />
+        <Route exact path={paths.EditPacksNational} component={AdminNational} />
+
+
       </Switch>
     </Router>
   )

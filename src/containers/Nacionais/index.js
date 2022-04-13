@@ -6,14 +6,14 @@ import { Container, CardContainer } from './styles'
 import formatCurrency from '../../utils/formatCurrency'
 import api from '../../services/api'
 
-import { Header, Banner, CardNational } from '../../components'
+import { Header, Banner, CardNational,AvaliationsCarousel } from '../../components'
 
 export function National (national) {
   const [packs, setPacks] = useState([])
 
   useEffect(() => {
     async function loadPacks () {
-      const { data:allPacks } = await api.get('national')
+      const { data: allPacks } = await api.get('national')
 
       console.log(allPacks)
 
@@ -32,9 +32,11 @@ export function National (national) {
       <Header />
       <Banner />
       <CardContainer>
-      {packs.map(national =>(
+        {packs.map(national => (
           <CardNational key={national.id} national={national} />
-       ))}      </CardContainer>
+        ))}
+      </CardContainer>
+      <AvaliationsCarousel />
     </Container>
   )
 }

@@ -12,24 +12,24 @@ import { ErrorMessage } from '../../../components'
 
 import { Container, Label, Input, Button, LabelUpload } from './styles'
 
-function EditPacks () {
+function EditPacksNational () {
   const [fileName, setFileName] = useState(null)
   const {
     push,
     location: {
-      state: { international }
+      state: { national }
     }
   } = useHistory()
   const onSubmit = async data => {
-    const internationalDataFormData = new FormData()
+    const nationalDataFormData = new FormData()
 
-    internationalDataFormData.append('name', data.name)
-    internationalDataFormData.append('price', data.price)
-    internationalDataFormData.append('description', data.description)
-    internationalDataFormData.append('file', data.file[0])
+    nationalDataFormData.append('name', data.name)
+    nationalDataFormData.append('price', data.price)
+    nationalDataFormData.append('description', data.description)
+    nationalDataFormData.append('file', data.file[0])
 
     await toast.promise(
-      api.put(`international/${international.id}`, internationalDataFormData),
+      api.put(`national/${national.id}`, nationalDataFormData),
       {
         success: 'Produto editado com sucesso',
         error: 'Falha ao editar o produto'
@@ -37,9 +37,10 @@ function EditPacks () {
     )
 
     setTimeout(() => {
-      push('/admin-internacionais')
+      push('/admin-nacionais')
     }, 2000)
   }
+
   const schema = Yup.object().shape({
     name: Yup.string().required('O nome é obrigatório'),
     description: Yup.string().required('A descrição é obrigatório'),
@@ -63,7 +64,7 @@ function EditPacks () {
           <Input
             type='text'
             {...register('name')}
-            defaultValue={international.name}
+            defaultValue={national.name}
           />
           <ErrorMessage>{errors.name?.message}</ErrorMessage>
         </div>
@@ -72,8 +73,7 @@ function EditPacks () {
           <Input
             type='text'
             {...register('description')}
-            defaultValue={international.description}
-
+            defaultValue={national.description}
           />
           <ErrorMessage>{errors.description?.message}</ErrorMessage>
         </div>
@@ -82,7 +82,7 @@ function EditPacks () {
           <Input
             type='number'
             {...register('price')}
-            defaultValue={international.price}
+            defaultValue={national.price}
           />
           <ErrorMessage>{errors.price?.message}</ErrorMessage>
         </div>
@@ -112,4 +112,4 @@ function EditPacks () {
   )
 }
 
-export default EditPacks
+export default EditPacksNational
