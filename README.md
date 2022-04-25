@@ -7,7 +7,7 @@ TourPage - Interface
   Let's know this repositories.
 </h3>
 
-You can view this project in LinkedIn :wave:(https://www.linkedin.com/posts/pedro-lucas-dos-santos_nodejs-reactjs-postgresql-activity-6920052870155223040-QW0k?utm_source=linkedin_share&utm_medium=member_desktop_web)
+You can view this project in LinkedIn :wave: [Get in touch!](https://www.linkedin.com/posts/pedro-lucas-dos-santos_nodejs-reactjs-postgresql-activity-6920052870155223040-QW0k?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
 <br>
 
