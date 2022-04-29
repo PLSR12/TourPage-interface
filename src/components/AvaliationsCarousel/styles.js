@@ -25,6 +25,11 @@ export const Container = styled.div`
     border: none;
     color: #ffffff;
   }
+
+  .fkJvkI {
+    background-color: #0568a6;
+    box-shadow: 0 0 1px 2px rgb(0 0 0 / 50%);
+  }
 `
 export const ContainerItems = styled.div`
   display: flex;
@@ -41,7 +46,6 @@ export const TextAvaliation = styled.p`
 `
 
 export const ContainerAvaliation = styled.div`
-
   .avaliacao {
     display: flex;
     justify-content: center;
@@ -83,43 +87,44 @@ export const ContainerAvaliation = styled.div`
     color: #fff;
   }
 
-  @media (max-width:548px) {
+  @media (max-width: 548px) {
     .caixa-text p {
-        font-size: 12px;
-        padding: 20px 20px 10px 20px;
-        text-align: center;
-        color: #fff;
-        max-width: 240px;
+      font-size: 12px;
+      padding: 20px 20px 10px 20px;
+      text-align: center;
+      color: #fff;
+      max-width: 240px;
     }
     .caixa-text h1 {
-        padding: 10px 0px 20px 0px;
-        font-size: 12px;
+      padding: 10px 0px 20px 0px;
+      font-size: 12px;
     }
     .avaliacao h2 {
-        font-size: 12px;
+      font-size: 12px;
     }
     .caixa-text svg {
-        height: 12px;
-        width: 12px;
+      height: 12px;
+      width: 12px;
     }
   }
-    @media (max-width:375px) {
-      .caixa-text p {
-        font-size: 11px;
-        padding: 20px 20px 0px 20px;
-        max-width: 190px;
+  @media (max-width: 375px) {
+    .caixa-text p {
+      font-size: 11px;
+      padding: 20px 20px 0px 20px;
+      max-width: 190px;
     }
     .caixa-text h1 {
-        font-size: 11px;
-        padding-top: 5px;
+      font-size: 11px;
+      padding-top: 5px;
     }
     .avaliacao h2 {
-        font-size: 11px;
-        padding-top: 5px;
+      font-size: 11px;
+      padding-top: 5px;
     }
     .caixa-text svg {
-        height: 11px;
-        width: 11px;
-        padding-top: 5px
+      height: 11px;
+      width: 11px;
+      padding-top: 5px;
     }
-    }`
+  }
+`
