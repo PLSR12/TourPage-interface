@@ -25,11 +25,22 @@ export const Container = styled.div`
     border: none;
     color: #ffffff;
   }
-
-  .fkJvkI {
-    background-color: #0568a6;
-    box-shadow: 0 0 1px 2px rgb(0 0 0 / 50%);
+  .rec.rec-arrow:disabled {
+    border: none;
+    color: #000;
   }
+  .rec.rec-dot {
+    background-color: #0568a6;
+    box-shadow: 0 0 1px 2px #fff;
+    cursor:none;
+  }
+  .rec.rec-dot:active {
+    background-color: #000;
+    box-shadow: 0 0 1px 3px #fff;
+    cursor:none;
+  }
+
+  
 `
 export const ContainerItems = styled.div`
   display: flex;
