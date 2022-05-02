@@ -66,26 +66,7 @@ export const PackDescription = styled.p`
 export const PackPrice = styled.p`
   font-weight: 700;
   font-size: 1.2rem;
-  line-height: 21px;
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #000000;
-`
-export const Button = styled.button`
-  padding: 10px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 15px;
-  background-color: #0568a6;
-  color: #ffffff;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px #949494;
-  animation-name: botao;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
 `
