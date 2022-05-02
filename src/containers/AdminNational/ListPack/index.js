@@ -10,7 +10,7 @@ import TableHead from '@mui/material/TableHead'
 import TableRow from '@mui/material/TableRow'
 import Paper from '@mui/material/Paper'
 
-import { Container, EditIconStyles } from './styles'
+import {EditIconStyles } from './styles'
 import api from '../../../services/api'
 import formatCurrency from '../../../utils/formatCurrency'
 
@@ -32,7 +32,6 @@ function ListPacksNational () {
   }
 
   return (
-    <Container>
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} size='small' aria-label='a dense table'>
           <TableHead>
@@ -65,7 +64,6 @@ function ListPacksNational () {
           </TableBody>
         </Table>
       </TableContainer>
-    </Container>
   )
 }
 

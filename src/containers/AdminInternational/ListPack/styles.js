@@ -7,6 +7,6 @@ export const Container = styled.div`
 
 export const EditIconStyles = styled(EditIcon)`
     cursor: pointer;
-    color: #323d5d;
+    color: #000;
 `
 

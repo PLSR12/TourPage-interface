@@ -71,10 +71,10 @@ function NewPacks () {
           <ErrorMessage>{errors.price?.message}</ErrorMessage>
         </div>
         <div>
-          <LabelUpload>
+          <LabelUpload  style={{color: 'white'}} >
             {fileName || (
               <>
-                <CloudUploadIcon />
+                <CloudUploadIcon style={{color: 'white'}} />
                 Caregue a imagem do pacote
               </>
             )}

@@ -8,9 +8,10 @@ export const Container = styled.div`
   align-items: center;
 
   form {
-    background-color: #565656;
+    background-color:  #0568a6;
     border-radius: 10px;
     padding: 30px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -20,24 +21,29 @@ export const Label = styled.p`
   font-size: 15px;
   color: #fff;
   margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Input = styled.input`
-  width: 100%;
+  width: 280px;
   height: 40px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   outline: none;
   border: none;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Button = styled.button`
-  width: 100%;
+  width: 80%;
   height:40px;
   margin-top: 25px;
   background: #ffff;
   border-radius: 20px;
+  font-size: 18px;
   border: none;
   cursor: pointer;
   color: #000;

@@ -7,9 +7,10 @@ import {
   PackName,
   Image,
   PackPrice,
-  PackDescription,
-  Button
+  PackDescription
 } from './styles'
+
+import { Button } from '../../components'
 
 export function CardNational ({ national }) {
   return (

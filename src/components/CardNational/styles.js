@@ -71,22 +71,3 @@ export const PackPrice = styled.p`
   margin-bottom: 20px;
   color: #000000;
 `
-export const Button = styled.button`
-  padding: 10px 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 15px;
-  margin-bottom: 20px;
-  background-color: #0568a6;
-  color: #ffffff;
-  cursor: pointer;
-  box-shadow: 0px 0px 10px #949494;
-  animation-name: botao;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: ease-in-out;
-`
