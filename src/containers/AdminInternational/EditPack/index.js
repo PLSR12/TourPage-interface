@@ -69,7 +69,7 @@ function EditPacks () {
         </div>
         <div>
           <Label> Descrição:</Label>
-          <Input
+          <textarea
             type='text'
             {...register('description')}
             defaultValue={international.description}
