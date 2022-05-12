@@ -70,7 +70,7 @@ function EditPacksNational () {
         </div>
         <div>
           <Label> Descrição:</Label>
-          <Input
+          <textarea
             type='text'
             {...register('description')}
             defaultValue={national.description}
