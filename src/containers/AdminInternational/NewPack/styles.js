@@ -2,19 +2,31 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
-  min-width: 100%;
-  height: 100%;
+  width: 100%;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
 
   form {
-    background-color:  #0568a6;
+    background-color: #0568a6;
     border-radius: 10px;
     padding: 30px;
     width: 400px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+  }
+
+  textarea {
+    min-width: 280px;
+    min-height: 40px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
   }
 `
 export const Label = styled.p`
@@ -39,7 +51,7 @@ export const Input = styled.input`
 
 export const Button = styled.button`
   width: 80%;
-  height:40px;
+  height: 40px;
   margin-top: 25px;
   background: #ffff;
   border-radius: 20px;
