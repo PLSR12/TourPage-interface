@@ -6,9 +6,8 @@ export const Container = styled.div`
   background-color:  #0568a6;
   box-shadow: 0px 0px 14px rgba(0, 0, 0, 0.15);
   width: 19vw;
-  height:100vh;  
-  margin-top: 0;
-  margin-left: 0;
+  min-height:100vh;  
+  margin: 0 0 ;
 
   hr {
     margin: 50px 15px;
